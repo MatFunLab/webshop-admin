@@ -1,0 +1,29 @@
+#uploadProduct {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+
+.form-field {
+    margin-top: 20px;
+}
+
+.form-input {
+    float: right;
+    margin-right: 70px;
+}
+
+#upload-btn {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#toggle-category-btn {
+    font-size: 10px;
+    cursor: pointer;
+}
+
+#toggle-category-btn:hover {
+    color: #802BB1;
+}

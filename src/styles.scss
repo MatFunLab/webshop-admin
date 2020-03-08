@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+
+}
+app-root {
+    display: inline-block;
+    overflow: auto;
+}
+html, body {
+    padding: 0;
+    margin: 0;
+}
+html, body, app-root {
+    width: 100%;
+    height: 100%;
+}
+
+app-products {
+    display: inline-block;
+    margin-left: 80px;
+}

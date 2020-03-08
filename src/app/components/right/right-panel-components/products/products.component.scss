@@ -1,0 +1,33 @@
+#product-wrapper {
+    background-color: #564F6F;
+}
+.product-img-wrapper {
+  height: 100%;
+  width: 100%;  
+  margin: 20px;
+
+}
+
+.product-img {
+    height: 250px;
+    width: 181.063px;
+    display: block;
+    margin: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+#prod-desc {
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+ 
+
+}
+#prod-desc:hover {
+    overflow: visible; 
+    white-space: normal;
+    
+}

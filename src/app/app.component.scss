@@ -1,0 +1,16 @@
+app-left-panel {
+    display: inline-block;
+    height: 100%;
+    width: 25%;
+    background-color: #242031;
+    overflow: auto;
+}
+
+app-right-panel {
+    display: inline-block;
+    height: 100%;
+    width: 75%;
+    background-color: #564F6F;
+    overflow: auto;
+    float: right;
+}

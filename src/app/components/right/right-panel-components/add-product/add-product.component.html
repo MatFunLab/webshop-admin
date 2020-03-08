@@ -1,0 +1,38 @@
+<div id="uploadProduct">
+    <form #productform="ngForm" (ngSubmit)="onUploadProduct(productform)" class="form form-register">
+
+        <div class="form-field">
+              <label class="product" for="register-name"><span class="hidden">Name</span></label>
+              <input name="name" id="register-name" type="text" class="form-input" placeholder="Name" ngModel required>
+        </div>
+        <div class="form-field">
+          <label class="product" for="register-price"><span class="hidden">Price</span></label>
+          <input name="price" id="register-price" type="number" class="form-input" placeholder="Price" ngModel required>
+        </div>
+
+        <div class="form-field">
+          <label class="product" for="register-desc"><span class="hidden">Description</span></label>
+          <input name="desc" id="register-desc" type="text" class="form-input" placeholder="Description" ngModel required>
+        </div>
+
+        <div class="form-field">
+          <label class="product" for="register-category"><span class="hidden">Category</span></label>
+          <input *ngIf="!isHidden" name="category" id="register-category" type="text" class="form-input" placeholder="Add new category" ngModel required>
+          <a id="toggle-category-btn" (click)="toggleCategory()">add new/choose from existing category</a>
+          <select *ngIf="isHidden" [(ngModel)]="selectedCategory" name="existingCategory">
+            <option *ngFor="let category of categories"  [ngValue]="category">{{category.name}}</option>
+          </select>
+        </div>
+        <div class="form-field">
+            <input #image
+             name="file"
+            type="file" (change)="onFileChanged($event)"
+            ngModel required>
+        </div>
+
+        <div class="form-field" id="upload-btn">
+          <input [disabled]="productform.invalid" type="submit" value="upload">
+        </div>
+      </form>
+</div>
+

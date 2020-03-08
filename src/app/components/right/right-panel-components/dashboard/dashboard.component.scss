@@ -1,0 +1,24 @@
+#first-row-dashboard-container {
+    display: flex;
+    justify-content: center;
+}
+
+app-customer-region-panel, app-traffic-panel {
+    display: inline-block;
+    background-color: #2D283E;
+    color: #802BB1;
+    margin: 25px;
+    box-shadow: 1px -1px 34px 16px rgba(0,0,0,0.43);
+    -webkit-box-shadow: 1px -1px 34px 16px rgba(0,0,0,0.43);
+    -moz-box-shadow: 1px -1px 34px 16px rgba(0,0,0,0.43);
+}
+
+app-customer-region-panel {
+    height: 300px;
+    width: 500px;
+}
+    
+app-traffic-panel {
+    height: 300px;
+    width: 500px;
+}

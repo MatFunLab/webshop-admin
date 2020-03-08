@@ -1,0 +1,4 @@
+<div *ngFor="let product of topProducts">
+  <p>{{product.name}}</p>
+</div>
+<p *ngIf="isTopSelledError" id="error-top-selled">Currently there are no results to display</p>
